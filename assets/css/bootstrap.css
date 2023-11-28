@@ -4237,6 +4237,11 @@ input[type="submit"].btn.btn-mini {
   overflow: auto;
 }
 
+.full-width {
+  width: 1150px;
+  margin-top: 50px;
+}
+
 .tabs-below > .nav-tabs,
 .tabs-right > .nav-tabs,
 .tabs-left > .nav-tabs {
