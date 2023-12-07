@@ -27,6 +27,13 @@
   <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
   <link rel="shortcut icon" href="ico/favicon.ico" />
 
+  <!-- Remember to include jQuery :) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
   <!-- =======================================================
     Theme Name: Vesperr
     Theme URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
@@ -36,6 +43,9 @@
 </head>
 
 <body>
+  <style>
+    
+  </style>
   <header>
     <!-- start top -->
     <div id="topnav" class="navbar navbar-fixed-top default">
@@ -179,15 +189,24 @@
 
                 <div class="tab-content full-width">
                   <div class="tab-pane active" id="one">
-                    <h4>Game Dev</h4>
+                    <h4 style="margin-right: 40px;">Game Dev</h4>
+                    <div class="span11">
+                      <p>Please checkout the <span style="color: red; font-weight: bold;">lesson</span> session in every prototype</p>
+                    </div>
                     <div class="span5">
                       <ul>
-                        <li>Game Design Document <a href="https://drive.google.com/drive/folders/1YvGXeQoHk5Hi4cgg_qp8jdkocpJH-VDL?usp=sharing">[HERE]</a></li>
-                        <li>Inventory System, Resource Management <a href=https://www.youtube.com/watch?v=PmOn8DjIAj8">[HERE]</a></li>
-                        <li>Complex Combo System and Rogue-Like System <a href="https://youtu.be/pwbYTgXpxpc">[HERE]</a></li>
-                        <li>Minigames, Visuals and Sounds <a href="https://www.youtube.com/watch?v=t3pG9FcGdtY">[HERE]</a></li>
+                        <li>Game Design Document <a
+                            href="https://drive.google.com/drive/folders/1YvGXeQoHk5Hi4cgg_qp8jdkocpJH-VDL?usp=sharing">[HERE]</a>
+                        </li>
+                        <li>Inventory System, Resource Management <a
+                            href=https://www.youtube.com/watch?v=PmOn8DjIAj8">[HERE]</a></li>
+                        <li>Complex Combo System and Rogue-Like System <a href="https://youtu.be/pwbYTgXpxpc">[HERE]</a>[WIP]
+                        </li>
+                        <li>Minigames, Visuals and Sounds <a
+                            href="https://www.youtube.com/watch?v=t3pG9FcGdtY">[HERE]</a></li>
                         <li>Environment System <a href="https://www.youtube.com/watch?v=KPCnk075TpQ">[HERE]</a></li>
-                        <li>Tools, Analytics, Shortcuts, Bug Fixing <a href="https://www.youtube.com/watch?v=Z9wFWWZrOhA">[HERE]</a></li>
+                        <li>Tools, Analytics, Shortcuts, Bug Fixing <a
+                            href="https://www.youtube.com/watch?v=Z9wFWWZrOhA">[HERE]</a></li>
                       </ul>
                     </div>
                     <div class="span5">
@@ -229,7 +248,7 @@
           </div>
           <div class="sub-heading">
             <p>
-              These are some of my main projects developed during my programming studies
+              These are some of my main projects developed during my programming journey
             </p>
           </div>
         </div>
@@ -237,54 +256,223 @@
       <div class="row">
         <div class="span12">
           <div class="heading">
-            <h3><span>GAMES</span></h3>
+            <h3><span>PROFESSIONAL GAMES</span></h3>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="row" style="border-bottom: 10px dashed white; padding-bottom: 20px;">
+        <div class="row dashed-board">
           <div class="span3">
+            <h1 style="color: white;">TWD: Destinies</h1>
             <div class="box aligncenter">
               <div class="halftop">
-                <img src="assets/img/reivals.jpg" style="width: 100px;height: 100px;">
+                <img src="assets/img/twd.png">
+              </div>
+              <p>
+                Thriller action third person game based on the tv show, have multiple choices and story branch.
+              </p>
+              <a href="https://www.youtube.com/watch?v=Z9wFWWZrOhA" class="btn btn-theme">Gameplay</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="ex1" class="modal">
+                <h2>Lessons</h2>
+                <p>
+                  - Tools for design teams: level design, game design, QA <br>
+                  - Gameplay prototype <br>
+                  - System prototype <br>
+                  - Error prevent and quality analytic Tool <br>
+                  - General purpose tool <br>
+                  - Professional workflow <br>
+                </p>
+              </div>
+              <!-- Link to open the modal -->
+              <a href="#ex1" rel="modal:open" class="btn btn-danger">Lessons</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <div class="heading">
+            <h3><span>PROTOTYPE GAMES</span></h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row">
+          <div class="span3">
+            <h1 style="color: white;">Reivals</h1>
+            <div class="box aligncenter">
+              <div class="halftop">
+                <img src="assets/img/reivals.jpg">
               </div>
               <p>
                 Game Jam Duel game between local players through three different minigames.
               </p>
               <a href="https://www.youtube.com/watch?v=t3pG9FcGdtY" class="btn btn-theme">Gameplay</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="reivals" class="modal">
+                <h2>Lessons</h2>
+                <p>
+                  - Visuals <br>
+                  - Team working
+                </p>
+              </div>
+              <!-- Link to open the modal -->
+              <a href="#reivals" rel="modal:open" class="btn btn-danger">Lessons</a>
             </div>
           </div>
           <div class="span3">
+            <h1 style="color: white;">Dye Gather</h1>
             <div class="box aligncenter">
               <div class="halftop">
-                <img src="assets/img/tinta.jpg" style="width: 100px;height: 100px;">
+                <img src="assets/img/tinta.jpg">
               </div>
               <p>
                 Paint mixing game with exploration, inventory, mixing systems and environment.
               </p>
               <a href="https://www.youtube.com/watch?v=PmOn8DjIAj8" class="btn btn-theme">Gameplay</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="dyegather" class="modal">
+                <h2>Lessons</h2>
+                <p>
+                  - Resource Management <br>
+                  - Inventory
+                </p>
+              </div>
+              <!-- Link to open the modal -->
+              <a href="#dyegather" rel="modal:open" class="btn btn-danger">Lessons</a>
             </div>
           </div>
           <div class="span3">
+            <h1 style="color: white;">Fire Arcane</h1>
             <div class="box aligncenter">
               <div class="halftop">
-                <img src="assets/img/fire-arcane.jpg" style="width: 100px;height: 100px;">
+                <img src="assets/img/fire-arcane.jpg">
               </div>
               <p>
                 Magic combat and environmental interaction game with several different minigames.
               </p>
               <a href="https://www.youtube.com/watch?v=KPCnk075TpQ" class="btn btn-theme">Gameplay</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="firearcane" class="modal">
+                <h2>Lessons</h2>
+                <p>
+                  - Minigames <br>
+                  - Environment
+                </p>
+              </div>
+              <!-- Link to open the modal -->
+              <a href="#firearcane" rel="modal:open" class="btn btn-danger">Lessons</a>
             </div>
           </div>
           <div class="span3">
+            <h1 style="color: white;">No Reaction</h1>
             <div class="box aligncenter">
               <div class="halftop">
-                <img src="assets/img/no-reaction.jpg" style="width: 100px;height: 100px;">
+                <img src="assets/img/no-reaction.jpg">
               </div>
               <p>
                 Top down shooter inspired by the cyberpunk theme and Megaman stages.
               </p>
               <a href="https://www.youtube.com/watch?v=7290dpNqV0Y" class="btn btn-theme">Gameplay</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="noreaction" class="modal">
+                <h2>Lessons</h2>
+                <p>
+                  - Gameplay <br>
+                  - Environment Reaction
+                </p>
+              </div>
+              <!-- Link to open the modal -->
+              <a href="#noreaction" rel="modal:open" class="btn btn-danger">Lessons</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row dashed-board">
+          <div class="span3">
+            <h1 style="color: white;">Pools</h1>
+            <div class="box aligncenter">
+              <div class="halftop">
+                <img src="assets/img/wip.png">
+              </div>
+              <p>
+                Unreal Engine level design blockout playground
+              </p>
+              <a href="" class="btn btn-theme">Gameplay</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="p1" class="modal">
+                <h2>Lessons</h2>
+                <p>
+                  - WIP 1<br>
+                </p>
+              </div>
+              <!-- Link to open the modal -->
+              <a href="#p1" rel="modal:open" class="btn btn-danger">Lessons</a>
+            </div>
+          </div>
+          <div class="span3">
+            <h1 style="color: white;">Chocolatier</h1>
+            <div class="box aligncenter">
+              <div class="halftop">
+                <img src="assets/img/wip.png">
+              </div>
+              <p>
+                Game Maker resource management game
+              </p>
+              <a href="" class="btn btn-theme">Gameplay</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="p2" class="modal">
+                <h2>Lessons</h2>
+                <p>
+                  - WIP 2 <br>
+                </p>
+              </div>
+              <!-- Link to open the modal -->
+              <a href="#p2" rel="modal:open" class="btn btn-danger">Lessons</a>
+            </div>
+          </div>
+          <div class="span3">
+            <h1 style="color: white;">Aatrox Doom</h1>
+            <div class="box aligncenter">
+              <div class="halftop">
+                <img src="assets/img/wip.png">
+              </div>
+              <p>
+                Unity complex combo system and arena
+              </p>
+              <a href="" class="btn btn-theme">Gameplay</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="p3" class="modal">
+                <h2>Lessons</h2>
+                <p>
+                  - WIP 3<br>
+                </p>
+              </div>
+              <!-- Link to open the modal -->
+              <a href="#p3" rel="modal:open" class="btn btn-danger">Lessons</a>
+            </div>
+          </div>
+          <div class="span3">
+            <h1 style="color: white;">No Reaction ON</h1>
+            <div class="box aligncenter">
+              <div class="halftop">
+                <img src="assets/img/wip.png">
+              </div>
+              <p>
+                Unity multiplayer game with networking
+              </p>
+              <a href="" class="btn btn-theme">Gameplay</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="p4" class="modal">
+                <h2>Lessons</h2>
+                <p>
+                  - WIP 4<br>
+                </p>
+              </div>
+              <!-- Link to open the modal -->
+              <a href="#p4" rel="modal:open" class="btn btn-danger">Lessons</a>
             </div>
           </div>
         </div>

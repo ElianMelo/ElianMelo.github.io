@@ -4242,6 +4242,21 @@ input[type="submit"].btn.btn-mini {
   margin-top: 50px;
 }
 
+.dashed-board {
+  border-bottom: 10px dashed white; 
+  padding-bottom: 60px;
+}
+
+.modal {
+  margin-right: 85vw;
+  margin-bottom: 40vh;
+}
+
+.img-game img {
+  width: 200px;
+  height: 200px;
+}
+
 .tabs-below > .nav-tabs,
 .tabs-right > .nav-tabs,
 .tabs-left > .nav-tabs {
