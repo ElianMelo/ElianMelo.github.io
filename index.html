@@ -264,7 +264,11 @@
       <div class="row">
         <div class="row dashed-board">
           <div class="span3" style="margin-left: 500px;">
-            <h1 style="color: white;">TWD: Destinies</h1>
+            <h1 style="color: white;">
+              <a style="width: 10px; height: 18px;" href="https://store.steampowered.com/app/2192790/The_Walking_Dead_Destinies/" target="_blank" class="btn btn-warning">
+                <i class="icon-play"></i>
+              </a>
+              TWD: Destinies</h1>
             <div class="box aligncenter">
               <div class="halftop">
                 <img src="assets/img/twd.png">
@@ -303,14 +307,18 @@
       </div>
       <div class="row">
         <div class="row">
-          <div class="span3">
-            <h1 style="color: white;">Reivals</h1>
+          <div class="span3" game="Reivals"> 
+            <h1 style="color: white;">
+              <a style="width: 10px; height: 18px;" href="https://fabioaj.itch.io/reivals" target="_blank" class="btn btn-warning">
+                <i class="icon-play"></i>
+              </a>
+              Reivals</h1>
             <div class="box aligncenter">
               <div class="halftop">
                 <img src="assets/img/reivals.jpg">
               </div>
               <p>
-                Game Jam Duel game between local players through three different minigames.
+                <span style="color: red; font-weight: bolder;">Game Jam</span> Duel game between local players through three different minigames.
               </p>
               <a href="https://www.youtube.com/watch?v=t3pG9FcGdtY" target="_blank" class="btn btn-theme">Gameplay</a>
               <!-- Modal HTML embedded directly into document -->
@@ -331,7 +339,39 @@
               <a href="#reivals" rel="modal:open" class="btn btn-danger">Lessons</a>
             </div>
           </div>
-          <div class="span3">
+          <div class="span3" game="Bard Charm">
+            <h1 style="color: white;">
+              <a style="width: 10px; height: 18px;" href="https://elianmelo.itch.io/bard-charm" target="_blank" class="btn btn-warning">
+                <i class="icon-play"></i>
+              </a>
+              Bard Charm</h1>
+            <div class="box aligncenter">
+              <div class="halftop">
+                <img src="assets/img/bardcharm.png">
+              </div>
+              <p>
+                <span style="color: red; font-weight: bolder;">Game Jam</span> Charming game with musical notes that make the enemies harmless
+              </p>
+              <a href="https://www.youtube.com/watch?v=1tZ8TdDhQaY" target="_blank" class="btn btn-theme">Gameplay</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="bardcharm" class="modal">
+                <h2>Lessons</h2>
+                <p>
+                  - Game Design <br>
+                  - Level Design <br>
+                  - Multiple Weapon <br>
+                  - NPC System <br>
+                  - Level Progression <br>
+                  - NavMesh <br>
+                  - Enemy System <br>
+                  - Pause System <br>
+                </p>
+              </div>
+              <!-- Link to open the modal -->
+              <a href="#bardcharm" rel="modal:open" class="btn btn-danger">Lessons</a>
+            </div>
+          </div>
+          <div class="span3" game="Dye Gather">
             <h1 style="color: white;">Dye Gather</h1>
             <div class="box aligncenter">
               <div class="halftop">
@@ -356,7 +396,7 @@
               <a href="#dyegather" rel="modal:open" class="btn btn-danger">Lessons</a>
             </div>
           </div>
-          <div class="span3">
+          <div class="span3" game="Fire Arcane">
             <h1 style="color: white;">Fire Arcane</h1>
             <div class="box aligncenter">
               <div class="halftop">
@@ -384,61 +424,11 @@
               <a href="#firearcane" rel="modal:open" class="btn btn-danger">Lessons</a>
             </div>
           </div>
-          <div class="span3">
-            <h1 style="color: white;">No Reaction</h1>
-            <div class="box aligncenter">
-              <div class="halftop">
-                <img src="assets/img/no-reaction.jpg">
-              </div>
-              <p>
-                Top down shooter inspired by the cyberpunk theme and Megaman stages.
-              </p>
-              <a href="https://www.youtube.com/watch?v=7290dpNqV0Y" target="_blank" class="btn btn-theme">Gameplay</a>
-              <!-- Modal HTML embedded directly into document -->
-              <div id="noreaction" class="modal">
-                <h2>Lessons</h2>
-                <p>
-                  - Combat Gameplay <br>
-                  - Environment Reaction <br>
-                  - Parry System <br>
-                  - Shooting <br>
-                </p>
-              </div>
-              <!-- Link to open the modal -->
-              <a href="#noreaction" rel="modal:open" class="btn btn-danger">Lessons</a>
-            </div>
-          </div>
         </div>
       </div>
       <div class="row">
-        <div class="row dashed-board">
-          <div class="span3">
-            <h1 style="color: white;">Pools</h1>
-            <div class="box aligncenter">
-              <div class="halftop">
-                <img src="assets/img/wip.png">
-              </div>
-              <p>
-                (Unreal Engine) Level design blockout playground based on liminal space theme.
-              </p>
-              <a href="" target="_blank" class="btn btn-theme">Gameplay</a>
-              <!-- Modal HTML embedded directly into document -->
-              <div id="pools" class="modal">
-                <h2>Lessons</h2>
-                <p>
-                  - Level Design Blockout <br>
-                  - Unreal Engine Modeling Tools <br>
-                  - Simple Objects Modeling <br>
-                  - Tiles Shader <br>
-                  - Water Effect <br>
-                  - Environment Illumination <br>
-                </p>
-              </div>
-              <!-- Link to open the modal -->
-              <a href="#pools" rel="modal:open" class="btn btn-danger">Lessons</a>
-            </div>
-          </div>
-          <div class="span3">
+        <div class="row">
+          <div class="span3" game="Chocolatier">
             <h1 style="color: white;">Chocolatier</h1>
             <div class="box aligncenter">
               <div class="halftop">
@@ -463,7 +453,7 @@
               <a href="#chocolatier" rel="modal:open" class="btn btn-danger">Lessons</a>
             </div>
           </div>
-          <div class="span3">
+          <div class="span3" game="Aatrox Doom">
             <h1 style="color: white;">Aatrox Doom</h1>
             <div class="box aligncenter">
               <div class="halftop">
@@ -489,7 +479,31 @@
               <a href="#aatroxdoom" rel="modal:open" class="btn btn-danger">Lessons</a>
             </div>
           </div>
-          <div class="span3">
+          <div class="span3" game="No Reaction">
+            <h1 style="color: white;">No Reaction</h1>
+            <div class="box aligncenter">
+              <div class="halftop">
+                <img src="assets/img/no-reaction.jpg">
+              </div>
+              <p>
+                Top down shooter inspired by the cyberpunk theme and Megaman stages.
+              </p>
+              <a href="https://www.youtube.com/watch?v=7290dpNqV0Y" target="_blank" class="btn btn-theme">Gameplay</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="noreaction" class="modal">
+                <h2>Lessons</h2>
+                <p>
+                  - Combat Gameplay <br>
+                  - Environment Reaction <br>
+                  - Parry System <br>
+                  - Shooting <br>
+                </p>
+              </div>
+              <!-- Link to open the modal -->
+              <a href="#noreaction" rel="modal:open" class="btn btn-danger">Lessons</a>
+            </div>
+          </div>
+          <div class="span3" game="On Reaction">
             <h1 style="color: white;">On Reaction</h1>
             <div class="box aligncenter">
               <div class="halftop">
@@ -508,6 +522,36 @@
               </div>
               <!-- Link to open the modal -->
               <a href="#onreaction" rel="modal:open" class="btn btn-danger">Lessons</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row dashed-board">
+          <div class="span3" game="Pools">
+            <h1 style="color: white;">Pools</h1>
+            <div class="box aligncenter">
+              <div class="halftop">
+                <img src="assets/img/wip.png">
+              </div>
+              <p>
+                (Unreal Engine) Level design blockout playground based on liminal space theme.
+              </p>
+              <a href="" target="_blank" class="btn btn-theme">Gameplay</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="pools" class="modal">
+                <h2>Lessons</h2>
+                <p>
+                  - Level Design Blockout <br>
+                  - Unreal Engine Modeling Tools <br>
+                  - Simple Objects Modeling <br>
+                  - Tiles Shader <br>
+                  - Water Effect <br>
+                  - Environment Illumination <br>
+                </p>
+              </div>
+              <!-- Link to open the modal -->
+              <a href="#pools" rel="modal:open" class="btn btn-danger">Lessons</a>
             </div>
           </div>
         </div>
